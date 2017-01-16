@@ -1,0 +1,75 @@
+html, body, #app {
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    color: var(--main-white-text-color);
+    background-color: var(--main-dark-blue-background-color);
+    padding-top: 30px;
+}
+
+.not-found {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-wrapper {
+    height: 100%;
+}
+
+.main-app {
+    height: 100%;
+    padding: 10px 15px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-app > main {
+    flex: 1 0 auto;
+}
+
+.nav {
+    user-select: none;
+}
+
+footer {
+    position: relative;
+}
+
+.alert {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn .spinner {
+    margin: 0;
+}
+
+.btn.btn-loading {
+    outline: 0;
+}

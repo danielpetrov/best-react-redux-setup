@@ -1,0 +1,10 @@
+.notification-container {
+    width: auto;
+    max-width: 620px;
+    min-width: 280px;
+    padding: 0 15px 12px;
+}
+
+.notification-container-empty {
+    padding: 0;
+}

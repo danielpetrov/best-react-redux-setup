@@ -1,0 +1,21 @@
+.ReactModal__Overlay {
+    z-index: 10002;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+}
+
+.modal-dialog .form-group {
+    margin-left: 0 !important;
+}
+
+.modal-dialog .form-control {
+    background-color: #314256 !important;
+    padding: 5px;
+    height: 32px;
+}
+
+.modal-dialog .help-block {
+    left: 12px;
+}

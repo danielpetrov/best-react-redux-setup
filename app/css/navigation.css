@@ -1,0 +1,18 @@
+/* Begin fix for rules that are too general, coming from connect-bootstrap */
+.left-nav.nav > li {
+    margin-bottom: 28px;
+}
+
+.top-nav.nav > li {
+    margin-bottom: 0;
+}
+
+.top-nav.nav > li > a {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* End fix */
+
+header > nav.navbar {
+    border-bottom: 2px solid #223545;
+}

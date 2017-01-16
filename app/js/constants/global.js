@@ -1,0 +1,5 @@
+export const VALUE = 'value'
+export const FIELDS = 'fields'
+export const ROW_DATA_IDS = 'rowDataIds'
+export const ROW_DATA_BY_ID = 'rowDataById'
+export const RESET_STORE = 'RESET_STORE'
