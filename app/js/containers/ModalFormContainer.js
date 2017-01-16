@@ -201,21 +201,9 @@ class ModalFormContainer extends Component {
 }
 
 ModalFormContainer.propTypes = {
-    addPodFields: ImmutableProptypes.map,
     serverError: ImmutableProptypes.map,
-    addTickerFields: ImmutableProptypes.map,
-    isAddPodFormSubmitting: PropTypes.bool,
-    hasAddPodValidationError: PropTypes.bool,
-    hasAddPodEmptyField: PropTypes.bool,
-    isAddTickerFormSubmitting: PropTypes.bool,
-    hasAddTickerValidationError: PropTypes.bool,
-    hasAddTickerEmptyField: PropTypes.bool,
-    currentPathname: PropTypes.string,
-    location: PropTypes.object,
     setFormInputField: PropTypes.func,
     setFormInputError: PropTypes.func,
-    submitAddPodForm: PropTypes.func,
-    submitAddTickerForm: PropTypes.func,
     resetFormInputFields: PropTypes.func,
     resetFormInputError: PropTypes.func,
     resetFormServerError: PropTypes.func,
@@ -224,22 +212,11 @@ ModalFormContainer.propTypes = {
 
 export default connect(
     state => ({
-        addPodFields: formInputFieldsSelector(state, ADD_POD_FORM),
-        serverError: formServerErrorSelector(state),
-        isAddModelFormSubmitting: isLoadingSelector(state, IS_ADD_MODEL_FORM_SUBMITTING),
-        isAddPodFormSubmitting: isLoadingSelector(state, IS_ADD_POD_FORM_SUBMITTING),
-        hasAddPodValidationError: formHasValidationErrorSelector(state, ADD_POD_FORM),
-        hasAddPodEmptyField: formHasEmptyFieldSelector(state, ADD_POD_FORM),
-        addTickerFields: formInputFieldsSelector(state, ADD_TICKER_FORM),
-        isAddTickerFormSubmitting: isLoadingSelector(state, IS_ADD_TICKER_FORM_SUBMITTING),
-        hasAddTickerValidationError: formHasValidationErrorSelector(state, ADD_TICKER_FORM),
-        hasAddTickerEmptyField: formHasEmptyFieldSelector(state, ADD_TICKER_FORM)
+        serverError: formServerErrorSelector(state)
     }),
     dispatch => bindActionCreators({
         setFormInputField,
         setFormInputError,
-        submitAddPodForm,
-        submitAddTickerForm,
         resetFormInputFields,
         resetFormInputError,
         resetFormServerError,
