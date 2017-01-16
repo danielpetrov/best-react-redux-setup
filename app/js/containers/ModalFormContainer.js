@@ -25,17 +25,6 @@ import { validate } from '../utils/validate'
 import { getCurrentModalForm, toTitleCase } from '../utils/utils'
 
 class ModalFormContainer extends Component {
-    constructor(props) {
-        super(props)
-
-        this.handleInputChange = this.handleInputChange.bind(this)
-        this.handleFormSubmit = this.handleFormSubmit.bind(this)
-        this.closeModal = this.closeModal.bind(this)
-        this.closeServerErrorNotification = this.closeServerErrorNotification.bind(this)
-        this.handleKeyDown = this.handleKeyDown.bind(this)
-        this.isButtonDisabled = this.isButtonDisabled.bind(this)
-    }
-
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyDown)
     }
@@ -44,7 +33,7 @@ class ModalFormContainer extends Component {
         window.removeEventListener('keydown', this.handleKeyDown)
     }
 
-    validateInput({ inputName, inputValue }) {
+    validateInput = ({ inputName, inputValue }) => {
         const { location: { pathname: currentPathname } } = this.props
         const formName = getCurrentModalForm(currentPathname)
         const { [`has${toTitleCase(formName)}ValidationError`]: hasValidationError } = this.props
@@ -58,7 +47,7 @@ class ModalFormContainer extends Component {
         }
     }
 
-    handleKeyDown(e) {
+    handleKeyDown = e => {
         const { location: { pathname: currentPathname } } = this.props
         const formName = getCurrentModalForm(currentPathname)
         const { [`${formName}Fields`]: fields } = this.props
@@ -84,7 +73,7 @@ class ModalFormContainer extends Component {
         }
     }
 
-    handleInputChange({ target: { name: inputName, value: inputValue } }) {
+    handleInputChange = ({ target: { name: inputName, value: inputValue } }) => {
         const { location: { pathname: currentPathname } } = this.props
         const formName = getCurrentModalForm(currentPathname)
         const { setFormInputField } = this.props
@@ -93,7 +82,7 @@ class ModalFormContainer extends Component {
         this.validateInput({ inputName, inputValue })
     }
 
-    handleFormSubmit() {
+    handleFormSubmit = () => {
         const { location: { pathname: currentPathname } } = this.props
         const formName = getCurrentModalForm(currentPathname)
         const { [`${formName}Fields`]: fields } = this.props
@@ -103,13 +92,13 @@ class ModalFormContainer extends Component {
         submitForm(fieldsValues)
     }
 
-    closeServerErrorNotification() {
+    closeServerErrorNotification = () => {
         const { resetFormServerError } = this.props
 
         resetFormServerError()
     }
 
-    closeModal() {
+    closeModal = () => {
         const { resetFormInputFields, location: { pathname: currentPathname }, goBack } = this.props
         const formName = getCurrentModalForm(currentPathname)
 
@@ -118,7 +107,7 @@ class ModalFormContainer extends Component {
         this.closeServerErrorNotification()
     }
 
-    isButtonDisabled() {
+    isButtonDisabled = () => {
         const { location: { pathname: currentPathname } } = this.props
         const formName = getCurrentModalForm(currentPathname)
         const { [`has${toTitleCase(formName)}ValidationError`]: hasValidationError } = this.props
