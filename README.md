@@ -36,7 +36,6 @@
 
 ## Stack - development
 
-* ag-grid
 * axios
 * immutable
 * ramda
