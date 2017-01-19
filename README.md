@@ -90,14 +90,6 @@
 #### Used in
 * app/js/utils/services.js
 
-### ag-grid is used for displaying tabular data and thus providing more user friendly view and interact with the data itself
-
-#### More information
-* https://www.ag-grid.com/
-
-#### Used in
-* app/js/components/AgGrid/**
-
 ### Redux saga is used for handling the asynchronous flow of the application via generators
 
 #### More information
