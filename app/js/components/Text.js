@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { i18n } from '../utils/i18n'
 
-export default class Text extends PureComponent {
+export default class Text extends Component {
     render() {
         const { iKey, className } = this.props
 

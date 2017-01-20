@@ -1,8 +1,8 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import classnames from 'classnames'
 import { Text, Button } from '.'
 
-export default class FileUpload extends PureComponent {
+export default class FileUpload extends Component {
     render() {
         const { isFileUploading, isFileUploaded } = this.props
         const { accept, onFileUpload, onRemoveFileClick, onSendFileClick, fileName } = this.props

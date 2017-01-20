@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import classnames from 'classnames'
 
-export default class Loader extends PureComponent {
+export default class Loader extends Component {
     render() {
         const { small, large } = this.props
 

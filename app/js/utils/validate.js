@@ -54,8 +54,6 @@ export const validate = ({ formName, inputName, inputValue }) => {
     switch (formName) {
         case 'SOME_FORM':
             return validateSomeForm({ inputName, inputValue })
-        case ADD_TICKER_FORM:
-            return validateTicker({ inputName, inputValue })
         default:
             return { hasError: false }
     }

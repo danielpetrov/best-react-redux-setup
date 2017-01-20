@@ -1,8 +1,8 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import classnames from 'classnames'
 import { Loader } from '.'
 
-export default class Button extends PureComponent {
+export default class Button extends Component {
     render() {
         const { children, onClick, disabled, className, title, isLoading } = this.props
         const buttonProps = {

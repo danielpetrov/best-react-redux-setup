@@ -1,9 +1,9 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { Text } from '.'
 import { isProduction } from '../utils/utils'
 import classnames from 'classnames'
 
-export default class NotImplemented extends PureComponent {
+export default class NotImplemented extends Component {
     render() {
         const { fontSize } = this.props
 

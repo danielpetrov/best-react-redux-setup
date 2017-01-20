@@ -1,9 +1,9 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { NavigationLink } from '.'
 import { i18n } from '../../utils/i18n'
 import getLink from '../../utils/getLink'
 
-export default class TopNavigationLinks extends PureComponent {
+export default class TopNavigationLinks extends Component {
     render() {
         const { currentPathname } = this.props
 

@@ -1,6 +1,6 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 
-export default class Search extends PureComponent {
+export default class Search extends Component {
     constructor() {
         super()
 

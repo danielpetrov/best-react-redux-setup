@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import Select from 'react-select'
 
-export default class MultiSelect extends PureComponent {
+export default class MultiSelect extends Component {
     render () {
         const { placeholder, options, value, onSelectChange } = this.props
 

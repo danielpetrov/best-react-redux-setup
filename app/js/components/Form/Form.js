@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { Button, Text } from '..'
 
-export default class Form extends PureComponent {
+export default class Form extends Component {
     renderFormButton() {
         const { isSubmitting, isButtonDisabled, handleFormSubmit, formName } = this.props
 

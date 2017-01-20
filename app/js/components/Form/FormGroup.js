@@ -1,4 +1,4 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import ImmutableProptypes from 'react-immutable-proptypes'
 import classnames from 'classnames'
 import { Text } from '..'
@@ -6,7 +6,7 @@ import { FORM_INPUT_TYPE_TEXT, FORM_INPUT_TYPE_SELECT } from '../../constants/fo
 import { VALUE } from '../../constants/global'
 import { i18n } from '../../utils/i18n'
 
-export default class FormGroup extends PureComponent {
+export default class FormGroup extends Component {
     renderFormControl() {
         const { formName, field, fieldType, fieldName, selectOptions, handleInputChange } = this.props
         const id = `${formName}-${fieldName}-field`

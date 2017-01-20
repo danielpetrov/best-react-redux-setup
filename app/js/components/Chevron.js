@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import classnames from 'classnames'
 
-export default class Chevron extends PureComponent {
+export default class Chevron extends Component {
     render() {
         const { isCollapsed, onClick, className, collapsedClass } = this.props
 

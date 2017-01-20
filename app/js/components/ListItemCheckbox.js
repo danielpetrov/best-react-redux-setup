@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { Checkbox } from '.'
 
-export default class ListItemCheckbox extends PureComponent {
+export default class ListItemCheckbox extends Component {
     render() {
         const { checked, id, value, onChange } = this.props
 

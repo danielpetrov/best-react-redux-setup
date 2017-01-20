@@ -1,7 +1,7 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { multipleReplace } from '../utils/utils'
 
-export default class Date extends PureComponent {
+export default class Date extends Component {
     render() {
         const { year, month, day, hour, minutes, format } = this.props
         const find = ['yyyy', 'MM', 'dd', 'HH', 'mm']

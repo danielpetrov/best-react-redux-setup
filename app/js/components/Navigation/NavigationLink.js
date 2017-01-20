@@ -1,8 +1,8 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import classnames from 'classnames'
 
-export default class NavigationLink extends PureComponent {
+export default class NavigationLink extends Component {
     render() {
         const { isActive, linkTo, title } = this.props
 

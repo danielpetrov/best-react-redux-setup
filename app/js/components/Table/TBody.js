@@ -1,8 +1,8 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent as Component, PropTypes } from 'react'
 import ImmutablePropTypes from 'react-immutable-proptypes'
 import { TRow } from '.'
 
-export default class TBody extends PureComponent {
+export default class TBody extends Component {
     render() {
         const { data, keyMapValue } = this.props
 

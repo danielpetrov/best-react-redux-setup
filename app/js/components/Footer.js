@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent as Component } from 'react'
 import { Text } from '../components'
 
-export default class Footer extends PureComponent {
+export default class Footer extends Component {
     render() {
         return (
             <footer>
