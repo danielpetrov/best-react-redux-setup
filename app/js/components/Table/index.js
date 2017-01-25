@@ -1,3 +1,5 @@
-export THead from './THead'
-export TBody from './TBody'
-export TRow from './TRow'
+export { THead } from './THead'
+export { TBody } from './TBody'
+export { TRow } from './TRow'
+export { Table } from './Table'
+export { TableWrapper } from './TableWrapper'

@@ -1,7 +1,7 @@
 import React, { PureComponent as Component, PropTypes } from 'react'
 import { Text } from '..'
 
-export default class THead extends Component {
+export class THead extends Component {
     render() {
         const { headerIKeys } = this.props
 
